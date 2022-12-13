@@ -26,7 +26,6 @@ class ClassName:
 	# methods
 	def method(self):
 		pass
-
 obj = ClassName()
 ```
 What is the **self**?
@@ -52,7 +51,7 @@ Custom objects are mutable and can be altered dynamically.
 Classes do not occupy memory. When instances of classes are created, then only memory is consumed.
 # Encapsulation
 
-Encapsulation in Python is **wrapping the data and methods** within a single unit. 
+Encapsulation in Python is **wrapping the data and methods** within a single unit. 
 
 A class implementation is an example of encapsulation as it binds all the data members (instance variables) and methods into a single unit.
 
@@ -80,13 +79,13 @@ Types of Inheritance
 ### Some Useful Methods
 
 1. isinstance() → This function is used to check whether an object is an instance of a particular class. It returns a boolean value of True if the object is an instance and, otherwise, False.
-    
+
     bool = isInstance(obj,class)
-    
+
 2. issubclass() → This function is used to check whether a class is derived from a parent class. It returns a boolean value True if the two classes share a parent-child relationship and, otherwise, False.
-    
+
     bool = issubclass(child class,parent class)
-    
+
 
 # Abstraction
 
