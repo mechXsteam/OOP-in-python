@@ -11,7 +11,7 @@ class Phone:
         return 'Hello World from Parent class'
 
 
-# Smartphone inherits from phone class, student class
+# Smartphone inherits from phone class
 class SmartPhone(Phone):
     def __init__(self, name, os, ram, price, brand):
         print("Inside SmartPhone constructor")
@@ -28,7 +28,7 @@ class SmartPhone(Phone):
 
 
 s1 = SmartPhone("GalaxyX90", "Android", '8GB', 48000, 'Samsung')
-# I can access the parent class attributes, but not the private ones
+# we can access the parent class attributes, but not the private ones
 print(s1.brand)
 print(s1.func())
 
@@ -55,7 +55,8 @@ print(obj1.attr1)
 # This happens due to method overriding. Method overriding is an ability of any object-oriented programming language
 # that allows a child class to execute implementation of its own method against a method already provided by its parent
 # class.Since __init__() is a special method declared both in parent and child class therefore this method is overridden
-# Therefore to access parent class attributes and methods declared in the constructor, we use super() keyword.
+# in the child's class. Therefore, to access parent class attributes and methods declared in the constructor, we use
+# super() keyword.
 
 class Child2(Parent):
     def __init__(self):
@@ -95,8 +96,8 @@ child1 = child()
 child1.func()
 
 # If two parents have the same named methods, the child class performs the method of the first parent in order of
-# reference. Languages like JAVA suffers ambiguity in such type of problem, python don't because of its follows mro.
-# These problems are known as diamond problem.
+# reference. Languages like JAVA suffers ambiguity in such type of problem (known as diamond problem), but python don't
+# because it follows mro.
 # order of reference -> Child class > parent1 > parent2 > parent3 (multiple resolution order, mro)
 
 # Based on the above concepts we can have, multilevel, hierarchical and hybrid inheritance.
